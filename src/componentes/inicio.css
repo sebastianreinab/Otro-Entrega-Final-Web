@@ -1,0 +1,21 @@
+form {
+    width: 500px;
+}
+.div_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+boton_guardar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
