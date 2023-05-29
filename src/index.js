@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { FormuInicio } from './componentes/FormuInicio';
-import { Principal } from './componentes/Principal';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FormuInicio />
+    <App />
   </React.StrictMode>
 );
 

@@ -1,12 +1,18 @@
 import React from "react";
 
-export const Imagenes = ({imgs})=> {
+export const Imagenes = ({tamañoPin})=> {
 
     return(
         <>
-            <div>
-                <img src={imgs.imagen} alt={imgs.title} />
+            <div className={`pin ${tamañoPin}`}>
+                <img src="" />
             </div>
+            
         </>
     )
+
+            //<div className={`pin ${tamañoPin}`}>
+            //    <img src={imgs.imagen} alt={imgs.title} />
+            //</div>
+    
 }

@@ -1,24 +1,48 @@
 import logo from './logo.svg';
 import './App.css';
+import { FormuInicio } from './componentes/FormuInicio';
+import { CosasMenu } from './componentes/CosasMenu';
+import AddAlertIcon from '@mui/icons-material/AddAlert';
+import TextsmsRoundedIcon from '@mui/icons-material/TextsmsRounded';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import PersonIcon from '@mui/icons-material/Person';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        
+        <div className='header'>
+          <header>
+            <div className='menu'>
+             
+              <button>Inicio</button>
+              <button>Hoy</button>
+              <CosasMenu icono={<ExpandMoreIcon />}/>
+              <div className='busqueda'>
+                <input type='text' placeholder='Search'/>
+              </div>
+              
+              <CosasMenu icono={<AddAlertIcon />}/>
+              <CosasMenu icono={<AddAlertIcon />}/>
+              <CosasMenu icono={<TextsmsRoundedIcon />}/>
+              <CosasMenu icono={<PersonIcon />}/>
+              <CosasMenu icono={<ExpandMoreIcon />}/>
+
+                
+            </div>     
+          </header>       
+        </div>
+        
+        <body>
+          
+        </body>
+        <footer>
+          <div></div>
+        </footer>
+      </div>
+      
+    </>
   );
 }
 

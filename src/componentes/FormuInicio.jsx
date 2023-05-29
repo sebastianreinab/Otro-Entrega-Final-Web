@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { UseForm } from "../hooks/HookFormuInicio";
 import Captura from "../assets/img/Captura.png"
 import './inicio.css'
-import { Principal } from "./Principal";
 import { BrowserRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -66,7 +65,7 @@ export const FormuInicio =()=> {
                 </fieldset>               
             </form>
             
-            <button onClick={Principal}>algo</button>
+            
         </div> 
     )
 }
