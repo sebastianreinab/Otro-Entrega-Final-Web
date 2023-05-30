@@ -7,6 +7,7 @@ import TextsmsRoundedIcon from '@mui/icons-material/TextsmsRounded';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PersonIcon from '@mui/icons-material/Person';
 import { useEffect } from 'react';
+import { Imagenes } from './componentes/Imagenes';
 
 function App() {
 
@@ -42,9 +43,34 @@ function App() {
           </header>       
         </div>      
 
-        <div>
+        <div className='body'>
           <body>
-                
+            <div className='principal'>
+              <Imagenes tamañoPin={"pequeño"}/>
+              <Imagenes tamañoPin={"mediano"}/>
+              <Imagenes tamañoPin={"grande"}/>
+              <Imagenes tamañoPin={"pequeño"}/>
+              <Imagenes tamañoPin={"mediano"}/>
+              <Imagenes tamañoPin={"grande"}/>
+              <Imagenes tamañoPin={"pequeño"}/>
+              <Imagenes tamañoPin={"mediano"}/>
+              <Imagenes tamañoPin={"grande"}/>
+              <Imagenes tamañoPin={"pequeño"}/>
+              <Imagenes tamañoPin={"mediano"}/>
+              <Imagenes tamañoPin={"grande"}/>
+              <Imagenes tamañoPin={"pequeño"}/>
+              <Imagenes tamañoPin={"mediano"}/>
+              <Imagenes tamañoPin={"grande"}/>
+              <Imagenes tamañoPin={"pequeño"}/>
+              <Imagenes tamañoPin={"mediano"}/>
+              <Imagenes tamañoPin={"grande"}/>
+              <Imagenes tamañoPin={"pequeño"}/>
+              <Imagenes tamañoPin={"mediano"}/>
+              <Imagenes tamañoPin={"grande"}/>
+              <Imagenes tamañoPin={"pequeño"}/>
+              <Imagenes tamañoPin={"mediano"}/>
+              <Imagenes tamañoPin={"grande"}/>
+            </div>
           </body>
         </div>
         <footer>
