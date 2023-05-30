@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-import { UseForm } from "../hooks/HookFormuInicio";
-import Captura from "../assets/img/Captura.png"
-import './inicio.css'
+import { UseForm } from "../../hooks/HookFormuInicio";
+import Captura from "../../assets/img/Captura.png"
 import { BrowserRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
+
 
 
 
@@ -62,7 +62,8 @@ export const FormuInicio =()=> {
                         asda
                     </button>
                     
-                </fieldset>               
+                </fieldset> 
+                             
             </form>
             
             

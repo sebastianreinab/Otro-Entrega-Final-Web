@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { FormuInicio } from './componentes/FormuInicio';
+import { FormuInicio } from './componentes/auth/FormuInicio';
 import { CosasMenu } from './componentes/CosasMenu';
 import AddAlertIcon from '@mui/icons-material/AddAlert';
 import TextsmsRoundedIcon from '@mui/icons-material/TextsmsRounded';
@@ -8,11 +8,12 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PersonIcon from '@mui/icons-material/Person';
 import { useEffect } from 'react';
 import { Imagenes } from './componentes/Imagenes';
+import { AppRouter } from './routers/AppRouter';
 
-function App() {
+export const App =()=> {
 
 
-  useEffect(()=>{
+  /*useEffect(()=>{
     const iconos = document.querySelectorAll(".cosoDelMenu");
 
     function activarIconoMenu() {
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <>
+      
       <div className="App">
         
         <div className='header'>
@@ -79,7 +81,15 @@ function App() {
       </div>
       
     </>
-  );
+  );*/
+
+  return( 
+    <AppRouter />
+  )
+
+  
 }
 
-export default App;
+//export default App;
+
+
