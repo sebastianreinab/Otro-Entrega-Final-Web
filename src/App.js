@@ -6,37 +6,47 @@ import AddAlertIcon from '@mui/icons-material/AddAlert';
 import TextsmsRoundedIcon from '@mui/icons-material/TextsmsRounded';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PersonIcon from '@mui/icons-material/Person';
+import { useEffect } from 'react';
 
 function App() {
+
+
+  useEffect(()=>{
+    const iconos = document.querySelectorAll(".cosoDelMenu");
+
+    function activarIconoMenu() {
+      iconos.forEach(n => n.classList.remove('active'));
+        this.classList.add('active');
+    }
+    iconos.forEach((n) => n.addEventListener("click", activarIconoMenu))
+  },[])
+
   return (
     <>
       <div className="App">
         
         <div className='header'>
           <header>
-            <div className='menu'>
-             
+            <div className='menu'>           
               <button>Inicio</button>
               <button>Hoy</button>
               <CosasMenu icono={<ExpandMoreIcon />}/>
               <div className='busqueda'>
                 <input type='text' placeholder='Search'/>
-              </div>
-              
-              <CosasMenu icono={<AddAlertIcon />}/>
+              </div>              
               <CosasMenu icono={<AddAlertIcon />}/>
               <CosasMenu icono={<TextsmsRoundedIcon />}/>
               <CosasMenu icono={<PersonIcon />}/>
-              <CosasMenu icono={<ExpandMoreIcon />}/>
-
-                
+              <CosasMenu icono={<ExpandMoreIcon />}/>              
             </div>     
           </header>       
+        </div>      
+
+        <div>
+          <body>
+                
+          </body>
         </div>
-        
-        <body>
-          
-        </body>
         <footer>
           <div></div>
         </footer>

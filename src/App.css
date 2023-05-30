@@ -55,4 +55,27 @@
   padding: 10px 20px;
 }
 
+.MuiSvgIcon-root {
+  color: #282c34;
+}
+
+.cosoDelMenu:hover , 
+.cosoDelMenu.active {
+  background: #282c34;
+}
+
+.cosoDelMenu:hover .MuiSvgIcon-root, 
+.cosoDelMenu.active .MuiSvgIcon-root{
+  color: white;
+}
+
+.busqueda input {
+
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: silver;
+}
+
 
