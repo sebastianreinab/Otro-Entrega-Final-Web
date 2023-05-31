@@ -4,6 +4,10 @@ import { UseForm } from "../../hooks/HookFormuInicio";
 import Captura from "../../assets/img/Captura.png"
 import { BrowserRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
+import '../../inicio.css'
+import google from '../../assets/img/google.png'
+import { Routes,Route, Navigate} from "react-router-dom";
+import { App } from "../../App";
 
 
 
@@ -28,24 +32,24 @@ export const FormuInicio =()=> {
 
 
     return(
-        <div class="div_form">
+        <div className="div_form">
             
-            <form onSubmit={handleSubmit} >
-                <fieldset>
+            
+                <fieldset className="cssField">
                     <img src={Captura} />
                     <div class="form-group" >
+                        <label>Correo electronico</label><br/>
                         <input 
                             type="text" 
                             name="email" 
                             className="form-control"
-                            placeholder="ejemplo@gmail.com"
+                            placeholder="Correo"
                             autoComplete="off"
                             value={ correo }
                             onChange={handleInputChange}
-                        />
-                    </div>
-
-                    <div class="form-group" >
+                        /><br/>
+                                    
+                        <label>Contraseña</label><br/>
                         <input 
                             type="password" 
                             name="password" 
@@ -54,17 +58,29 @@ export const FormuInicio =()=> {
                             autoComplete="off"
                             value={ contraseña}
                             onChange={handleInputChange}
-                        />
-                    </div> 
-                    <label>¿Olvidó la contraseña?</label><br />
+                        /><br/>
 
-                    <button type="submit" className="btn" >
-                        asda
-                    </button>
+                        <label>¿Olvidó la contraseña?</label><br />
+
+                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" ><Link to="/principal" />
+                            ingresar
+                        </button><br/>
+                        <button className="bot_google">
+                            <img src={google} className="google"/>
+                            Continuar con google
+                        </button>
+                    </div> 
+                    <Routes>
+                
+                <Route path="/principal" element={<App />} />
+            
+            </Routes>
+                    
                     
                 </fieldset> 
                              
-            </form>
+            
+            
             
             
         </div> 

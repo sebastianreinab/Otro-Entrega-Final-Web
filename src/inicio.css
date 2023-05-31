@@ -1,0 +1,39 @@
+form {
+    width: 500px;
+}
+.div_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+    
+    margin-top: 200px;
+    
+}
+
+.form-group {   
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.btn_guardar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cssField {
+    border-radius: 15px;
+    align-items: center;
+}
+
+.google {
+    width: 25px;
+}
+
+.bot_google {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { FormuInicio } from './componentes/auth/FormuInicio';
 import { CosasMenu } from './componentes/CosasMenu';
@@ -13,7 +12,7 @@ import { AppRouter } from './routers/AppRouter';
 export const App =()=> {
 
 
-  /*useEffect(()=>{
+  useEffect(()=>{
     const iconos = document.querySelectorAll(".cosoDelMenu");
 
     function activarIconoMenu() {
@@ -81,11 +80,9 @@ export const App =()=> {
       </div>
       
     </>
-  );*/
+  );
 
-  return( 
-    <AppRouter />
-  )
+  
 
   
 }

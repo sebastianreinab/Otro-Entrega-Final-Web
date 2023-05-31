@@ -6,13 +6,15 @@ import { AppRouter } from './routers/AppRouter';
 import { FormuInicio } from './componentes/auth/FormuInicio';
 import { BrowserRouter } from 'react-router-dom';
 import { Algo } from './componentes/Algo';
-import { AppPrincipal } from './AppPrincipal';
+import { AppPrincipal } from './componentes/AppPrincipal';
+import { Provider } from 'react-redux';
 
 //const root = ReactDOM.createRoot(document.getElementById('root'));
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <AppRouter />
-  </BrowserRouter>
+    <BrowserRouter>
+      <AppPrincipal/>
+    </BrowserRouter>
+
 )
 
 // If you want to start measuring performance in your app, pass a function
