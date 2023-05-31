@@ -71,10 +71,9 @@ export const FormuInicio =()=> {
                 </fieldset> 
             </form>               
             
-            
-            
-            
         </div> 
+
+        //asdadasdasdadadadkljngdfbagsdf
     )
 }
 

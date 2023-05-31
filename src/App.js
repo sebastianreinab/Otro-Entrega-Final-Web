@@ -43,7 +43,6 @@ export const App =()=> {
             </div>     
           </header>       
         </div>      
-
         <div className='body'>
           <body>
             <div className='principal'>
