@@ -11,6 +11,7 @@ export const AppPrincipal =()=> {
         
 
         <Link to="/principal" >principal</Link>
+        <Link to="/*" >Formulario inicio</Link>
         
         <Routes>
             <Route path="/formulario" elemnet={<FormuInicio />}/>

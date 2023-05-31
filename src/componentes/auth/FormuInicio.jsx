@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { UseForm } from "../../hooks/HookFormuInicio";
-import Captura from "../../assets/img/Captura.png"
 import { BrowserRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
 import '../../inicio.css'
 import google from '../../assets/img/google.png'
-import { Routes,Route, Navigate} from "react-router-dom";
-import { App } from "../../App";
 import PinstaUAO from '../../assets/img/PinstaUAO.png'
 
 
@@ -63,10 +60,10 @@ export const FormuInicio =()=> {
 
                         <label>¿Olvidó la contraseña?</label><br />
 
-                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" ><Link to="/principal" />
+                        <button className="btn btn-outline-primary mt-1 btn-block" >
                             ingresar
                         </button><br/>
-                        <button className="bot_google">
+                        <button className="bot_google btn-outline-primary mt-1 btn-block">
                             <img src={google} className="google"/>
                             Continuar con google
                         </button>

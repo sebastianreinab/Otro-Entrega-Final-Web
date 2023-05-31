@@ -30,8 +30,8 @@ export const App =()=> {
         <div className='header'>
           <header>
             <div className='menu'>           
-              <button>Inicio</button>
-              <button>Hoy</button>
+              <button className="btn btn-dark">Inicio</button>
+              <button className="btn btn-dark">Hoy</button>
               <CosasMenu icono={<ExpandMoreIcon />}/>
               <div className='busqueda'>
                 <input type='text' placeholder='Search'/>
