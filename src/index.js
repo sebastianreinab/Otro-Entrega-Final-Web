@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import {App} from './App';
-import { AppRouter } from './routers/AppRouter';
 import { FormuInicio } from './componentes/auth/FormuInicio';
 import { BrowserRouter } from 'react-router-dom';
 import { Algo } from './componentes/Algo';

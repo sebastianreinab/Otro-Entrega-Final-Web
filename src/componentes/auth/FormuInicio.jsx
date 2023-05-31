@@ -8,6 +8,7 @@ import '../../inicio.css'
 import google from '../../assets/img/google.png'
 import { Routes,Route, Navigate} from "react-router-dom";
 import { App } from "../../App";
+import PinstaUAO from '../../assets/img/PinstaUAO.png'
 
 
 
@@ -34,9 +35,9 @@ export const FormuInicio =()=> {
     return(
         <div className="div_form">
             
-            
+            <form method="post">
                 <fieldset className="cssField">
-                    <img src={Captura} />
+                    <img src={PinstaUAO} className="pinstacss"/>
                     <div class="form-group" >
                         <label>Correo electronico</label><br/>
                         <input 
@@ -56,7 +57,7 @@ export const FormuInicio =()=> {
                             className="form-control"
                             placeholder="**********"
                             autoComplete="off"
-                            value={ contraseña}
+                            value={ contraseña }
                             onChange={handleInputChange}
                         /><br/>
 
@@ -69,16 +70,9 @@ export const FormuInicio =()=> {
                             <img src={google} className="google"/>
                             Continuar con google
                         </button>
-                    </div> 
-                    <Routes>
-                
-                <Route path="/principal" element={<App />} />
-            
-            </Routes>
-                    
-                    
+                    </div>        
                 </fieldset> 
-                             
+            </form>               
             
             
             

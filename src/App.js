@@ -7,7 +7,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PersonIcon from '@mui/icons-material/Person';
 import { useEffect } from 'react';
 import { Imagenes } from './componentes/Imagenes';
-import { AppRouter } from './routers/AppRouter';
+
 
 export const App =()=> {
 

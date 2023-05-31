@@ -26,6 +26,12 @@ form {
 .cssField {
     border-radius: 15px;
     align-items: center;
+    background-color: cornflowerblue;
+
+}
+
+.pinstacss {
+    margin-left: 60px;
 }
 
 .google {
